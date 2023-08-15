@@ -93,13 +93,13 @@ margin: 4px 0px 4px;
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
+    animation: botão-volta 0.2s forwards;
    
   
 }
 
 .light #switch button {
-    right: 0;
-    left:initial;
+    animation: botão-ida 0.4s forwards;
 }
 
 
@@ -191,6 +191,8 @@ footer  {
 
 }
 
+/* media queries*/
+
 @media (min-width: 700px) {
     :root {
         --bg-url: url(asset/assets/bg-desktop.jpg)
@@ -202,5 +204,21 @@ footer  {
 
 }
 
+/* animações*/
+@keyframes botão-ida {
+    from{
+        left:0;
+    }
+    to{
+        left:50%;
+    }
+}
 
-
+@keyframes botão-volta {
+    from{
+        left: 50%;
+    }
+    to{
+        left: 0;
+    }
+}

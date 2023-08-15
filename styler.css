@@ -31,6 +31,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    height: 100vh;
 }
 
 /* fonte*/ 
@@ -190,7 +191,16 @@ footer  {
 
 }
 
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(asset/assets/bg-desktop.jpg)
+    }
 
+    .light {
+        --bg-url: url(asset/assets/bg-desktop-light.jpg)  
+    }
+
+}
 
 
 

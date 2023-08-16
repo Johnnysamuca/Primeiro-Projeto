@@ -98,11 +98,14 @@ margin: 4px 0px 4px;
   
 }
 
+
 .light #switch button {
     animation: botão-ida 0.4s forwards;
 }
 
-
+#switch button:hover {
+    background: 8px solid rgba(#FFFFFF33);
+}
 
 #switch span {
     display: block;

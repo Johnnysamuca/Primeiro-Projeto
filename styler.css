@@ -1,227 +1,208 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* esse é o padrão so que com variaveis*/
 
 :root {
-    --light-mode: white;
-    --bg-url: url(./asset/assets/bg-mobile.jpg) ;
-    --cor-da-borda: rgba(255,255,255,0.5);
-    --fundo-do-botao:rgba(255,255,255,0.1);
-    --lua-sol:url(./asset/assets/moon-stars.svg);
+  --light-mode: white;
+  --bg-url: url(./asset/assets/bg-mobile.jpg);
+  --cor-da-borda: rgba(255, 255, 255, 0.5);
+  --fundo-do-botao: rgba(255, 255, 255, 0.1);
+  --lua-sol: url(./asset/assets/moon-stars.svg);
 }
 
 /* esse é o modo light diferente do padrão em cores da borda e de fundo é com as variaveis*/
 
 .light {
-    --light-mode: black;
-    --bg-url: url(./asset/assets/bg-mobile-light.jpg) ;
-    --cor-da-borda:rgba(0,0,0,0.5);
-    --fundo-do-botao: rgba(0,0,0,0.05);
-    --lua-sol:url(./asset/assets/sun.svg);
+  --light-mode: black;
+  --bg-url: url(./asset/assets/bg-mobile-light.jpg);
+  --cor-da-borda: rgba(0, 0, 0, 0.5);
+  --fundo-do-botao: rgba(0, 0, 0, 0.05);
+  --lua-sol: url(./asset/assets/sun.svg);
 }
-
 
 body {
-    background-image:var(--bg-url) ;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    height: 100vh;
+  background-image: var(--bg-url);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
 }
 
-/* fonte*/ 
+/* fonte*/
 
 body * {
-    font-family: 'Inter', sans-serif;
-    color: var(--light-mode);
+  font-family: "Inter", sans-serif;
+  color: var(--light-mode);
 }
 
 /* "formatação da caixa do projeto"*/
 
 #contato {
-   width: 100%;
-   max-width: 588px;
-   margin: 56px auto 0px;
-   padding: 0px 24px;
-
- 
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0px 24px;
 }
 
 /* "foto do perfil*/
 
 #foto {
-    text-align: center;
+  text-align: center;
 }
 
 #foto img {
-    width: 160px;
-    padding: 24px;
-    
+  width: 160px;
+  padding: 24px;
 }
 
 /* configuraçoes do "@" ou "username" abaixo da foto*/
 
 #foto p {
-font-weight: 500;
-line-height: 24px;
-margin: 4px 0px 4px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 4px 0px 4px;
 }
 
 /*switch*/
 
 #switch {
-    position: relative;
-    width: 64px;
-    margin: 16px auto;
-
+  position: relative;
+  width: 64px;
+  margin: 16px auto;
 }
 
 #switch button {
-    width: 32px;
-    height: 32px;
-    background: white no-repeat center;
-    border: 0px;
-    border-radius: 50px;
-    background-image: var(--lua-sol);
-    position: absolute;
-    top:50%;
-    left: 0;
-    z-index: 1;
-    transform: translateY(-50%);
-    animation: botão-volta 0.2s forwards;
-   
-  
+  width: 32px;
+  height: 32px;
+  background: white no-repeat center;
+  border: 0px;
+  border-radius: 50px;
+  background-image: var(--lua-sol);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  animation: botão-volta 0.2s forwards;
 }
 
-
 .light #switch button {
-    animation: botão-ida 0.4s forwards;
+  animation: botão-ida 0.4s forwards;
 }
 
 #switch button:hover {
-    background: 8px solid rgba(#FFFFFF33);
+  background: 8px solid rgba(#ffffff33);
 }
 
 #switch span {
-    display: block;
-    width: 64px;
-    height:24px;
-    background: var(--fundo-do-botao);
-    border: 1px solid var(--cor-da-borda);
-    backdrop-filter:blur(4px);
-    -webkit-backdrop-filter:blur(4px);
-    border-radius: 9999px;
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--fundo-do-botao);
+  border: 1px solid var(--cor-da-borda);
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
 }
-
-
 
 /*links do Perfil "configurações" */
 
 ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin-top: 16px;
-    padding: 24px 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+  padding: 24px 0px;
 }
 
 /* "bordas,tamanho e estilizaçao dos links"*/
 
 ul li a {
-    display: block;
-    text-align: center;
-    border: 1px solid red;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 24px;
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
 
-    background: var(--fundo-do-botao);
-    border:1px solid var(--cor-da-borda);
-    border-radius: 8px;
+  background: var(--fundo-do-botao);
+  border: 1px solid var(--cor-da-borda);
+  border-radius: 8px;
 
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    text-decoration: none;
-    font-weight: 500;
+  backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
 
-    transition: background 0.2s;
-    
+  transition: background 0.2s;
 }
 
 /* "pseudo selector"*/
 
 ul li a:hover {
-    background: rgba(255,255,255,0.05);
-    border:1.5px solid var(--light-mode); 
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid var(--light-mode);
 }
-   
+
 /* midias sociais*/
 
 #midias-sociais {
-    display: flex;
-    justify-content: center;
-    padding: 24px;
-    font-size: 24px;
-
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  font-size: 24px;
 }
 
 #midias-sociais a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    transition: background 0.2s;
-    border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50px;
 }
 
 #midias-sociais :hover {
-    background: rgba(255,255,255,0.5);
-   
+  background: rgba(255, 255, 255, 0.5);
 }
 
 /* "Rodapé"*/
 
-footer  {
-    padding: 24px 0px;
-    text-align: center;
-    font-size: 14px;
-
+footer {
+  padding: 24px 0px;
+  text-align: center;
+  font-size: 14px;
 }
 
 /* media queries*/
 
 @media (min-width: 700px) {
-    :root {
-        --bg-url: url(asset/assets/bg-desktop.jpg)
-    }
+  :root {
+    --bg-url: url(asset/assets/bg-desktop.jpg);
+  }
 
-    .light {
-        --bg-url: url(asset/assets/bg-desktop-light.jpg)  
-    }
-
+  .light {
+    --bg-url: url(asset/assets/bg-desktop-light.jpg);
+  }
 }
 
 /* animações*/
 @keyframes botão-ida {
-    from{
-        left:0;
-    }
-    to{
-        left:50%;
-    }
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
 }
 
 @keyframes botão-volta {
-    from{
-        left: 50%;
-    }
-    to{
-        left: 0;
-    }
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
